@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <>
 
-            <div className="">
+            <div className="w-full">
 
                 <nav className="flex md:mb-5 md:gap-[65px] gap-[180px] items-center justify-center">
 
@@ -38,7 +38,7 @@ export default function Header() {
 
 
                 </nav>
-                <ul className="flex md:hidden items-center gap-[45px] justify-center mt-5 bg-gradient-to-t from-[#671ae4] to-[#b75cff] py-2  ">
+                <ul className="flex md:hidden items-center gap-[40px] justify-center mt-5 bg-gradient-to-t from-[#671ae4] to-[#b75cff] py-2  w-full">
                     <li className="text-white text-lg hover:text-xl font-bold"><Link href='/male'>Male </Link></li>
                     <li className="text-white text-lg hover:text-xl font-bold"><Link href='/female'>Female </Link></li>
                     <li className="text-white text-lg hover:text-xl font-bold"><Link href='/kids'>Kids </Link></li>
