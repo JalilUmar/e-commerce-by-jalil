@@ -30,9 +30,14 @@ export default function Header() {
                         <li className="text-white text-lg hover:text-xl"><Link href='/collection'>Collection </Link></li>
                     </ul>
 
-                    <Link href='/cart' >
-                        <button className=" bg-gradient-to-t from-[#671ae4] to-[#b75cff] p-4 rounded-full md:text-2xl text-lg text-white inline"><ImCart /></button>
-                    </Link>
+
+                    <span className="relative">
+                        <p className="absolute top-0 right-0 bg-white  rounded-full text-[12px] px-1">0</p>
+                        <Link href='/cart' >
+                            <button className=" bg-gradient-to-t from-[#671ae4] to-[#b75cff] p-4 rounded-full md:text-2xl text-lg text-white inline"><ImCart /></button>
+                        </Link>
+                    </span>
+
 
 
 
