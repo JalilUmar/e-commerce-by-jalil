@@ -1,8 +1,8 @@
-import Image from "next/image"
 
+
+import Image from "next/image"
 import BannerHome from './Comps/Banner'
 import PremiumC from "./Assets/PremiumC"
-
 
 
 const page = () => {
@@ -12,6 +12,8 @@ const page = () => {
         <BannerHome />
         <PremiumC />
       </div>
+
+      
       
     </>
   )
