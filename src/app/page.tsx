@@ -11,11 +11,8 @@ const page = () => {
       <div >
         <BannerHome />
         <PremiumC />
-
       </div>
       
-
-
     </>
   )
 }

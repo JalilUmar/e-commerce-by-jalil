@@ -1,4 +1,5 @@
 
+import Providers from '@/Store/provider'
 import Footer from './Comps/Footer'
 import Header from './Comps/Header'
 import './globals.css'
@@ -21,9 +22,11 @@ export default function RootLayout({
       <body className={inter.className} >
         <main className='bg-gradient-to-l from-[#181e41] to-[#984D38] md:py-5 py-3'>
           <div className='md:container md:max-w-[1400px]  max-w-[400px]'>
-            <Header />
-            {children}
-            <Footer />
+            <Providers>
+              <Header />
+              {children}
+              <Footer />
+            </Providers>
           </div>
         </main>
       </body>

@@ -1,11 +1,15 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import { BsSearch } from "react-icons/bs";
 import { ImCart } from "react-icons/im";
+import { useSelector} from 'react-redux'
 
 
 
 export default function Header() {
+    const count = useSelector((e: any) => e.cartCounter.value)
+  
     return (
         <>
 
@@ -32,7 +36,7 @@ export default function Header() {
 
 
                     <span className="relative">
-                        <p className="absolute top-0 right-0 bg-white  rounded-full text-[12px] px-1">0</p>
+                        <p className="absolute top-0 right-0 bg-white  rounded-full text-[12px] px-[5px] font-semibold">{count}</p>
                         <Link href='/cart' >
                             <button className=" bg-gradient-to-t from-[#671ae4] to-[#b75cff] p-4 rounded-full md:text-2xl text-lg text-white inline"><ImCart /></button>
                         </Link>
