@@ -13,10 +13,9 @@ const page = () => {
         <PremiumC />
       </div>
 
-      
-      
     </>
   )
 }
+
 
 export default page
