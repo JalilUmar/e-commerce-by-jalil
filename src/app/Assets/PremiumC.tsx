@@ -1,19 +1,17 @@
-'use client'
+
 
 import Image from "next/image"
 import { BsShop, BsArrowRightShort } from "react-icons/bs";
 import { MdVerified } from "react-icons/md";
-import { ImCart } from "react-icons/im";
 import { topBrands } from "../Comps/databaseLocal";
 import { Button } from "../../../components/ui/button"
 import Link from "next/link";
-import { useDispatch } from 'react-redux'
-import { addToCart } from "../../Store/itemCount/cartItemsCount";
+import AddToCartButtonHomePage from "./addToCartHome";
+
 
 
 export default function PremiumC() {
 
-    const dispatch = useDispatch()
 
     return (
         <>
@@ -34,7 +32,7 @@ export default function PremiumC() {
                                 </span>
                             </div>
 
-                            <button className="md:inline-flex flex items-center  bg-gradient-to-t from-[#181e41]  to-[#984D38] md:px-[100px] px-[35px] md:py-3 py-[7px] text-white rounded-xl font-semibold md:mt-5 mt-2 md:text-base text-[12px] " onClick={() => dispatch(addToCart())} ><ImCart className="mr-2 md:text-2xl text-xl " /> Add to Cart</button>
+                           <AddToCartButtonHomePage />
 
                             <Link href='/productDetail' className=" " >
                                 <button className="md:inline-flex flex items-center  bg-gradient-to-t from-[#671ae4] to-[#b75cff]  md:px-[110px] px-[42px] md:py-3 py-[7px] text-white rounded-xl font-semibold md:mt-2 mt-[6px] md:text-base text-[12px] "   ><BsShop className="mr-2 md:text-2xl text-xl " /> Buy Now</button>
