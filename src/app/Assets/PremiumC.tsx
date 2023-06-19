@@ -35,7 +35,7 @@ export default function PremiumC() {
                            <AddToCartButtonHomePage />
 
                             <Link href='/productDetail' className=" " >
-                                <button className="md:inline-flex flex items-center  bg-gradient-to-t from-[#671ae4] to-[#b75cff]  md:px-[110px] px-[42px] md:py-3 py-[7px] text-white rounded-xl font-semibold md:mt-2 mt-[6px] md:text-base text-[12px] "   ><BsShop className="mr-2 md:text-2xl text-xl " /> Buy Now</button>
+                                <button className="md:inline-flex flex items-center  bg-gradient-to-t from-[#671ae4] to-[#b75cff]  md:px-[110px] px-[41px] md:py-3 py-[7px] text-white rounded-xl font-semibold md:mt-2 mt-[6px] md:text-base text-[12px] "   ><BsShop className="mr-2 md:text-2xl text-xl " /> Buy Now</button>
                             </Link>
                         </span>
                     </div>

@@ -1,20 +1,23 @@
-'use client'
+
+
 
 import Image from "next/image"
 import { BsShop } from "react-icons/bs";
 import Link from "next/link";
-import { ImCart } from "react-icons/im";
-import { useDispatch } from 'react-redux'
-import { addToCart } from "../../Store/itemCount/cartItemsCount";
+import AddToCartButton from "../Assets/addToCart";
+
 
 export default function page() {
-    const dispatch = useDispatch()
+
+  
+    
     return (
         <>
-            <main className="my-[70px]  ">
+            <main className="my-[70px]">
                 <section className="text-center mb-[20px] -mt-[30px]">
-                    <h1 className="inline text-white md:text-2xl font-bold">Premium Collection For Females</h1>
+                    <h1 className="inline text-white md:text-2xl font-bold">Premium Collection For Female</h1>
                 </section>
+
 
                 <section className="grid md:grid-cols-4 grid-cols-2 md:gap-[50px] gap-5 md:mx-0 mx-[10px]">
 
@@ -31,7 +34,9 @@ export default function page() {
                                     <h1 className=" text-white  md:text-lg text-base  font-semibold ">234.12 ETH</h1>
                                 </span>
                             </div>
-                            <button className="md:inline-flex flex items-center  bg-gradient-to-t from-[#181e41]  to-[#984D38] md:px-[77px] rounded-full px-[33px] md:py-3 py-[7px] text-white font-semibold md:mt-5 mt-2 md:text-base text-[12px] " onClick={() => dispatch(addToCart())} ><ImCart className="mr-2 md:text-2xl text-xl " /> Add to Cart</button>
+
+                            <AddToCartButton />
+
                             <Link href='/productDetail' className=" " >
                                 <button className="md:inline-flex flex items-center  bg-gradient-to-t from-[#671ae4] to-[#b75cff]  md:px-[85px] rounded-full px-[40px] md:py-3 py-[7px] text-white  font-semibold md:mt-2 mt-1 md:text-base text-[12px] "  ><BsShop className="mr-2 md:text-2xl text-xl " /> Buy Now</button>
                             </Link>
