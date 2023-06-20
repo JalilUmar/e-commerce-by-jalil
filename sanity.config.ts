@@ -1,5 +1,5 @@
 /**
- * This configuration is used to for the Sanity Studio that’s mounted on the `\src\app\studio\[[...index]]\page.tsx` route
+ * This configuration is used to for the Sanity Studio that’s mounted on the `\src\app\data-with-cms\[[...index]]\page.tsx` route
  */
 
 import {visionTool} from '@sanity/vision'
@@ -11,7 +11,7 @@ import {apiVersion, dataset, projectId} from './sanity/env'
 import {schema} from './sanity/schema'
 
 export default defineConfig({
-  basePath: '/studio',
+  basePath: '/data-with-cms',
   projectId,
   dataset,
   // Add and edit the content schema in the './sanity/schema' folder

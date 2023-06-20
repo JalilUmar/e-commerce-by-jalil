@@ -1,17 +1,17 @@
-export const product = {
-    name : 'product' ,
+export const products = {
+    name : 'products' ,
     title : 'Products' ,
-    type : 'document' , 
-    fields : [
+    type : 'document' ,
+    fields :[
         {
             name : 'productTitle' ,
             title : 'Product Title' ,
-            type : 'string'
-        } ,
+            type: 'string'
+        },
         {
             name : 'productPrice' ,
             title : 'Product Price' ,
-            type : 'string'
-        } ,
+            type: 'string'
+        },
     ]
 }
