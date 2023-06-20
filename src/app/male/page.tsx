@@ -6,10 +6,23 @@ import { BsShop } from "react-icons/bs";
 import Link from "next/link";
 import AddToCartButton from "../Assets/addToCart";
 
+import { client } from "../../../sanity/lib/client";
 
-export default function page() {
 
-  
+export const getProductData = async () => {
+    const res = await client.fetch(`*[_type == 'products']{
+        productTitle ,
+        productPrice ,
+        productDescription ,
+    }`)
+    return res
+}
+
+
+export default async function page() {
+
+    const productsData  = await getProductData()
+
     
     return (
         <>
@@ -21,6 +34,7 @@ export default function page() {
 
                 <section className="grid md:grid-cols-4 grid-cols-2 md:gap-[50px] gap-5 md:mx-0 mx-[10px]">
 
+                    
                     <div className="  flex">
                         <span className=" bg-slate-400 bg-opacity-30 md:p-3 p-[6px] md:rounded-2xl rounded-lg ">
                             <Image className="rounded-lg mx-auto md:w-[337px] w-[150px]" src='/home/ldr1.png' alt="tg" width={337} height={380} />

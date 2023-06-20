@@ -4,6 +4,17 @@ export const products = {
     type : 'document' ,
     fields :[
         {
+            name : 'productImageMain' ,
+            title : 'Main Product Image' ,
+            type: 'image'
+        },
+        {
+            name : 'productImage2' ,
+            title : 'Product Image2' ,
+            type: 'array' ,
+            of:[{type : 'image'}]
+        },
+        {
             name : 'productTitle' ,
             title : 'Product Title' ,
             type: 'string'
@@ -11,6 +22,11 @@ export const products = {
         {
             name : 'productPrice' ,
             title : 'Product Price' ,
+            type: 'number'
+        },
+        {
+            name : 'productDescription' ,
+            title : 'Product Description' ,
             type: 'string'
         },
     ]
