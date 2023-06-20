@@ -12,10 +12,12 @@ import { client } from "../../../sanity/lib/client";
 
 
 export const getProductData = async () => {
-    const res = await client.fetch(`*[_type == 'products']{
+    const res = await client.fetch(`*[_type=="products"]{
+        _id,
+      productImageMain,
         productTitle ,
         productPrice ,
-        productDescription ,
+        productDescription,
     }`)
     return res
 }
@@ -29,22 +31,23 @@ export default async function PremiumC() {
 
     return (
         <>
-            <main className=" md:mx-[100px] mx-[10px] ">
-                {
-                    productsData.map((items: any) => {
-                        return (
-                            <section className="grid md:grid-cols-3 grid-cols-2 md:gap-[50px] gap-5 my-5 ">
-                                <div className="  flex">
-                                    <span className=" bg-slate-400 bg-opacity-30 md:p-3 p-[6px] md:rounded-2xl rounded-lg ">
+            <main key='1' className=" md:mx-[100px] mx-[10px] ">
+                <section className="grid grid-flow-col md:grid-cols-3 grid-cols-2 md:gap-[50px] gap-5   ">
+                    <span className="flex">
+                        {
+                            productsData.map((items: any) => {
+                                return (
+
+                                    <span key={items._id} className=" bg-slate-400 bg-opacity-30 md:p-3 p-[6px] my-5 md:rounded-2xl rounded-lg md:w-1/3 ">
                                         <Image className="rounded-lg mx-auto md:w-[337px] w-[150px]" src='/home/ldr1.png' alt="tg" width={337} height={380} />
                                         <div className="md:flex md:gap-0   justify-center">
                                             <span className=" md:pr-[10px] md:w-2/3">
-                                                <p className="text-slate-400 md:mt-5 mt-2 md:text-base text-[10px]">@Seller Name</p>
+                                                <p className="text-slate-400 md:mt-5 mt-2 md:text-[12px] text-[10px]">@Seller Name</p>
                                                 <h1 className="md:inline text-white md:text-lg text-base  ">{items.productTitle}</h1>
                                             </span>
                                             <span className=" md:w-1/3">
-                                                <p className="text-slate-400 md:mt-5 mt-1 md:text-base text-[10px]">Price</p>
-                                                <h1 className=" text-white  md:text-lg text-base   ">{items.productPrice} ETH</h1>
+                                                <p className="text-slate-400 md:mt-5 mt-1 md:text-[12px] text-[10px]">Price</p>
+                                                <h1 className=" text-white  md:text-lg text-base   ">$ {items.productPrice}</h1>
                                             </span>
                                         </div>
 
@@ -54,15 +57,15 @@ export default async function PremiumC() {
                                             <button className="md:inline-flex flex items-center text-center  bg-gradient-to-t from-[#671ae4] to-[#b75cff]  md:px-[110px] px-[41px] md:py-3 py-[7px] text-white rounded-xl font-semibold md:mt-2 mt-[6px] md:text-base text-[12px] "   ><BsShop className="mr-2 md:text-2xl text-xl " /> Buy Now</button>
                                         </Link>
                                     </span>
-                                </div>
-                            </section>
-                        )
-                    })
-                }
+                                )
+                            })
+                        }
+                    </span>
+                </section>
 
                 <div className=" text-center my-[30px] md:grid hidden">
                     <Link href='/collection'  >
-                        <button className="inline-flex items-center md:border-2 md:bg-transparent  hover:border-0 md:hover:bg-gradient-to-t from-[#671ae4] to-[#b75cff] px-[70px] py-4 md:ml-0 ml-4 text-white  rounded-full font-semibold "  > View More <BsArrowRightShort className="ml-2 text-2xl " /></button>
+                        <button className="inline-flex items-center md:border-2 md:bg-transparent transition-transform  hover:border-0 md:hover:bg-gradient-to-t from-[#671ae4] to-[#b75cff] px-[70px] py-4 md:ml-0 ml-4 text-white  rounded-full font-semibold "  > View More <BsArrowRightShort className="ml-2 text-2xl " /></button>
                     </Link>
                 </div>
 

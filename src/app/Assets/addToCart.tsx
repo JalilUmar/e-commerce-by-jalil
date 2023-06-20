@@ -11,7 +11,7 @@ export default function AddToCartButton() {
 
     return (
         <>
-            <button className="md:inline-flex flex items-center  bg-gradient-to-t from-[#181e41]  to-[#984D38] md:px-[75px] px-[32px] md:py-3 py-[7px] text-white rounded-full font-semibold md:mt-5 mt-2 md:text-base text-[12px] " onClick={() => dispatch(addToCart())} ><ImCart className="mr-2 md:text-2xl text-xl " /> Add to Cart</button>
+            <button className="md:inline-flex flex items-center  bg-gradient-to-t from-[#613b31]  to-[#c35131] md:px-[75px] px-[32px] md:py-3 py-[7px] text-white rounded-full font-semibold md:mt-5 mt-2 md:text-base text-[12px] " onClick={() => dispatch(addToCart())} ><ImCart className="mr-2 md:text-2xl text-xl " /> Add to Cart</button>
 
         </>
     )
