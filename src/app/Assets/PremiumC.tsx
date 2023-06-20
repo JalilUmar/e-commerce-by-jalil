@@ -33,7 +33,7 @@ export default async function PremiumC() {
                 {
                     productsData.map((items: any) => {
                         return (
-                            <section className="grid md:grid-cols-3 grid-cols-2 md:gap-[50px] gap-5 my-10 ">
+                            <section className="grid md:grid-cols-3 grid-cols-2 md:gap-[50px] gap-5 my-5 ">
                                 <div className="  flex">
                                     <span className=" bg-slate-400 bg-opacity-30 md:p-3 p-[6px] md:rounded-2xl rounded-lg ">
                                         <Image className="rounded-lg mx-auto md:w-[337px] w-[150px]" src='/home/ldr1.png' alt="tg" width={337} height={380} />
