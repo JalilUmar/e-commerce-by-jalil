@@ -38,17 +38,19 @@ export default async function PremiumC() {
                             return (
 
                                 <span key={items._id} className="inline bg-slate-400 bg-opacity-30 md:px-3 md:py-3 px-[7px] py-[6px]  md:rounded-2xl rounded-lg mb-2 md:mb-4 ">
-                                    <Image className="rounded-lg md:w-[250px] w-[150px]" src={urlForImage(items.productImageMain).url()} alt="tg" width={250} height={300} />
-                                    <div className="md:gap-0 justify-center">
-                                        <span className="   ">
-                                            <p className="text-slate-400 md:mt-3 mt-2 md:text-[12px] text-[10px]">@Seller Name</p>
-                                            <h1 className="md:inline text-white md:text-lg text-base  ">{items.productTitle}</h1>
-                                        </span>
-                                        <span className=" ">
-                                            <p className="text-slate-400  md:text-[12px] text-[10px]">Price</p>
-                                            <h1 className=" text-white  md:text-lg text-base   ">${items.productPrice}</h1>
-                                        </span>
-                                    </div>
+                                    <Link href='/'>
+                                        <Image className="rounded-lg md:w-[250px] w-[150px]" src={urlForImage(items.productImageMain).url()} alt="tg" width={250} height={300} />
+                                        <div className="md:gap-0 justify-center">
+                                            <span className="   ">
+                                                <p className="text-slate-400 md:mt-3 mt-2 md:text-[12px] text-[10px]">@Seller Name</p>
+                                                <h1 className="md:inline text-white md:text-lg text-base  ">{items.productTitle}</h1>
+                                            </span>
+                                            <span className=" ">
+                                                <p className="text-slate-400  md:text-[12px] text-[10px]">Price</p>
+                                                <h1 className=" text-white  md:text-lg text-base   ">${items.productPrice}</h1>
+                                            </span>
+                                        </div>
+                                    </Link>
 
                                     <AddToCartButtonHomePage />
 
