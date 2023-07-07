@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { topBrands } from "../../Comps/databaseLocal";
+import { topBrands } from "../Comps/databaseLocal";
 import { AiFillMinusCircle, AiFillPlusCircle } from 'react-icons/ai'
 import { useState } from "react";
 import { FaCartPlus } from "react-icons/fa";
 import { BsShop } from "react-icons/bs";
-import { Separator } from "../../../../components/ui/separator"
+import { Separator } from "../../../components/ui/separator"
 
 
 
