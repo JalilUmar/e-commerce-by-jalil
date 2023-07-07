@@ -10,7 +10,7 @@ import { client } from "../../../sanity/lib/client";
 import { urlForImage } from "../../../sanity/lib/image";
 
 
-export const getProductData = async () => {
+ const getProductData = async () => {
     const res = await client.fetch(`*[_type=="products"]{
         _id,
       productImageMain,
