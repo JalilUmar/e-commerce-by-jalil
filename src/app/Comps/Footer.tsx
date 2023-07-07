@@ -16,7 +16,7 @@ export default function Footer() {
                     <p className='text-white mt-5 md:px-0 px-5 text-center md:text-left'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </section>
 
-                <section className='mt-5 md:ml-10 text-center md:text-left'>
+                <section className='mt-5 md:ml-10 text-center md:text-left md:grid hidden'>
                     <h3 className='text-white md:text-3xl text-4xl font-bold mb-5'>About</h3>
                     <ul className=' justify-center items-center'>
                         <li className='text-white text-base my-6 hover:text-lg'><Link href='/' >Products</Link></li>
@@ -27,7 +27,7 @@ export default function Footer() {
                 </section>
 
 
-                <section className='mt-5 md:ml-10  text-center md:text-left' >
+                <section className='mt-5 md:ml-10  text-center md:text-left md:grid hidden' >
                     <h3 className='text-white md:text-3xl text-4xl font-bold mb-5'>Company</h3>
                     <ul className=' justify-center items-center'>
                         <li className='text-white text-base my-6 hover:text-lg'><Link href='/' >Our Team</Link></li>
@@ -38,8 +38,8 @@ export default function Footer() {
                 </section>
 
 
-                <section className='mt-5  text-center md:text-left'>
-                    <h3 className='text-white md:text-3xl text-4xl font-bold mb-5'>Contacts</h3>
+                <section className='mt-5  text-center md:text-left md:grid hidden'>
+                    <h3 className='text-white md:text-3xl text-4xl font-bold '>Contacts</h3>
                     <ul className=' justify-center items-center'>
                         <li className='text-white text-base my-6 hover:text-lg'><Link href='/' >+92 321 3876575</Link></li>
                         <li className='text-white text-base my-6 hover:text-lg'><Link href='/' >jalil786.umer@gmail.com</Link></li>
