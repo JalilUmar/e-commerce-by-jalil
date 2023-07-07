@@ -13,10 +13,8 @@ import { Separator } from "../../../components/ui/separator"
 
 export default function ProductDetail() {
 
-    	let mainProductImage = '/sProducts/m2.png'
-
     const [Quantity, setQuantity] = useState(1)
-    const [mainImage, setMainImage] = useState(mainProductImage)
+    const [mainImage, setMainImage] = useState('/sProducts/m2.png')
     const [isHovered, setIsHovered] = useState(false);
     const [hoverPosition, setHoverPosition] = useState({ x: 0, y: 0 });
 
@@ -95,10 +93,10 @@ export default function ProductDetail() {
                         <section className="md:mx-[200px] mx-4 md:mt-0 mt-7 md:hidden">
                             <div className="md:flex grid grid-cols-4  gap-2 ">
 
-                                <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src={mainImage} onClick={() => setImage(mainImage)} alt="" width={100} height={100} />
-                                <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/dr1.png' onClick={() => setImage('/home/dr1.png')} alt="" width={100} height={100} />
-                                <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/ldr1.png' onClick={() => setImage('/home/ldr1.png')} alt="" width={100} height={100} />
-                                <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/dr1.png' onClick={() => setImage('/home/dr1.png')} alt="" width={100} height={100} />
+                                <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src={'/sProducts/m2.png'} onClick={() => setImage('/sProducts/m2.png')}alt="" width={100} height={100} />
+                                <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/sProducts/m1.png' onClick={() => setImage('/sProducts/m1.png')} alt="" width={100} height={100} />
+                                <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/sProducts/m3.png' onClick={() => setImage('/sProducts/m3.png')} alt="" width={100} height={100} />
+                                <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/sProducts/c2.png' onClick={() => setImage('/sProducts/c2.png')} alt="" width={100} height={100} />
                                 
                             </div>
                         </section>
@@ -138,12 +136,12 @@ export default function ProductDetail() {
                 <section className="md:mx-[200px] md:flex hidden">
                     <div className="md:flex grid grid-cols-4  gap-2 ">
 
-                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/ldr1.png' onClick={() => setImage('/home/ldr1.png')} alt="" width={100} height={100} />
-                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/dr1.png' onClick={() => setImage('/home/dr1.png')} alt="" width={100} height={100} />
-                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/ldr1.png' onClick={() => setImage('/home/ldr1.png')} alt="" width={100} height={100} />
-                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/dr1.png' onClick={() => setImage('/home/dr1.png')} alt="" width={100} height={100} />
-                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/ldr1.png' onClick={() => setImage('/home/ldr1.png')} alt="" width={100} height={100} />
-                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/dr1.png' onClick={() => setImage('/home/dr1.png')} alt="" width={100} height={100} />
+                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src={'/sProducts/m2.png'} onClick={() => setImage('/sProducts/m2.png')} alt="" width={100} height={100} />
+                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/sProducts/m1.png' onClick={() => setImage('/sProducts/m1.png')} alt="" width={100} height={100} />
+                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/sProducts/m3.png' onClick={() => setImage('/sProducts/m3.png')} alt="" width={100} height={100} />
+                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/sProducts/c2.png' onClick={() => setImage('/sProducts/c2.png')} alt="" width={100} height={100} />
+                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/sProducts/c3.png' onClick={() => setImage('/sProducts/c3.png')} alt="" width={100} height={100} />
+                        <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/dr2.png' onClick={() => setImage('/home/dr2.png')} alt="" width={100} height={100} />
                     </div>
                 </section>
 
