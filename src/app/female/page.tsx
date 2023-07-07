@@ -17,6 +17,7 @@ export const getProductData = async () => {
         productTitle ,
         productPrice ,
         productDescription,
+        
     }`)
     return res
 }
