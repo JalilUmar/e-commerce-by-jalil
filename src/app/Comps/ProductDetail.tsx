@@ -97,7 +97,7 @@ export default function ProductDetail() {
                                 <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/dr1.png' onClick={() => setImage('/home/dr1.png')} alt="" width={100} height={100} />
                                 <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/ldr1.png' onClick={() => setImage('/home/ldr1.png')} alt="" width={100} height={100} />
                                 <Image className="cursor-pointer hover:border-2 hover:border-blue-500 rounded-lg" src='/home/dr1.png' onClick={() => setImage('/home/dr1.png')} alt="" width={100} height={100} />
-                                
+
                             </div>
                         </section>
 

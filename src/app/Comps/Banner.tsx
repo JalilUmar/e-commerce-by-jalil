@@ -9,7 +9,7 @@ export default function BannerHome() {
         <>
             <main className="justify-center">
 
-                <section className="md:flex  md:gap-[190px] md:mt-[100px] mt-[40px] justify-center ">
+                <section className="md:flex  md:gap-[190px] md:mt-[50px] mt-[40px] justify-center ">
                     <div className="md:inline mt-[50px] text-center">
                         <h1 className="inline text-white md:text-6xl text-4xl  font-bold ">Clothes are the <br />Spirit of Fashion</h1>
                         <p className="text-slate-400 mt-8 ml-2 md:text-lg text-[15px] px-3">Lorem Ipsum has been the industry's standard dummy <br className="hidden md:flex" /> text ever since the 1500s, when an unknown printer took a <br className="hidden md:flex" />galley of type and scrambled it to make a type specimen book.</p>
